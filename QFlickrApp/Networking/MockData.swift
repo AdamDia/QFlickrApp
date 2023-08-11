@@ -10,7 +10,7 @@ import Foundation
 let mockPhotosData = [
     Photo(
         id: "53106485484",
-        secret: "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+        secret: "mvMGKE7VkF5UHaz0I",
         title: "Souvenir",
         farm: 1,
         server: "65535"

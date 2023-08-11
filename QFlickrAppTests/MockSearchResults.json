@@ -1,0 +1,23 @@
+{
+    "page": 1,
+    "pages": 10,
+    "perpage": 10,
+    "total": 100,
+    "photo": [
+        {
+            "id": "firstId",
+            "secret": "secrect1",
+            "title": "title1",
+            "farm":  1,
+            "server": "server1",
+        } ,
+        
+        {
+            "id": "secondId",
+            "secret": "secrect2",
+            "title": "title2",
+            "farm":  2,
+            "server": "server2",
+        } ,
+    ]
+}

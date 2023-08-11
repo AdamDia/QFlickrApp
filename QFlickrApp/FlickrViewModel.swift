@@ -12,7 +12,7 @@ class FlickrViewModel: ObservableObject {
     @Published private(set) var viewState: ViewState?
     @Published var alertItem: AlertItem?
     private(set) var page = 1
-    private var totalPages: Int?
+    private(set) var totalPages: Int?
     
     var isLoading: Bool {
         viewState == .loading
@@ -35,7 +35,7 @@ class FlickrViewModel: ObservableObject {
         defer { viewState = .finished }
 
         do {
-            let response = try await networkManager.searchflickrPhotos(searchTerm: searchTerm, page: page)
+            let response = try await networkManager.searchFlickrPhotos(searchTerm: searchTerm, page: page)
             self.totalPages = response.pages
             self.flickrImages = response.photo
         } catch {
@@ -52,7 +52,7 @@ class FlickrViewModel: ObservableObject {
         page += 1
 
         do {
-            let response = try await networkManager.searchflickrPhotos(searchTerm: searchTerm, page: page)
+            let response = try await networkManager.searchFlickrPhotos(searchTerm: searchTerm, page: page)
             self.totalPages = response.pages
             self.flickrImages.append(contentsOf: response.photo)
         } catch {

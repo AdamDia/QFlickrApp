@@ -21,7 +21,21 @@
 		8A51DE982A85059D00930C1C /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51DE972A85059D00930C1C /* CustomAlert.swift */; };
 		8A677E552A858135004A1437 /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E542A858135004A1437 /* Data+Ext.swift */; };
 		8A677E572A8595A0004A1437 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E562A8595A0004A1437 /* LoadingView.swift */; };
+		8A677E802A85B524004A1437 /* MockSearchResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A677E7F2A85B524004A1437 /* MockSearchResults.json */; };
+		8A677E822A85B686004A1437 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E812A85B686004A1437 /* MockNetworkManager.swift */; };
+		8A677E842A85B78E004A1437 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E832A85B78E004A1437 /* NetworkManagerTests.swift */; };
+		8A677E862A85BA05004A1437 /* FlickrViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E852A85BA05004A1437 /* FlickrViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A677E7A2A85B4D3004A1437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A51DE6E2A83C47200930C1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A51DE752A83C47200930C1C;
+			remoteInfo = QFlickrApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8A51DE762A83C47200930C1C /* QFlickrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFlickrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,10 +53,22 @@
 		8A51DE972A85059D00930C1C /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		8A677E542A858135004A1437 /* Data+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
 		8A677E562A8595A0004A1437 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8A677E762A85B4D3004A1437 /* QFlickrAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QFlickrAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A677E7F2A85B524004A1437 /* MockSearchResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockSearchResults.json; sourceTree = "<group>"; };
+		8A677E812A85B686004A1437 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		8A677E832A85B78E004A1437 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		8A677E852A85BA05004A1437 /* FlickrViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8A51DE732A83C47200930C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A677E732A85B4D3004A1437 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				8A51DE782A83C47200930C1C /* QFlickrApp */,
+				8A677E772A85B4D3004A1437 /* QFlickrAppTests */,
 				8A51DE772A83C47200930C1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				8A51DE762A83C47200930C1C /* QFlickrApp.app */,
+				8A677E762A85B4D3004A1437 /* QFlickrAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +141,17 @@
 			path = "Helper & Ext";
 			sourceTree = "<group>";
 		};
+		8A677E772A85B4D3004A1437 /* QFlickrAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A677E7F2A85B524004A1437 /* MockSearchResults.json */,
+				8A677E812A85B686004A1437 /* MockNetworkManager.swift */,
+				8A677E832A85B78E004A1437 /* NetworkManagerTests.swift */,
+				8A677E852A85BA05004A1437 /* FlickrViewModelTests.swift */,
+			);
+			path = QFlickrAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +172,24 @@
 			productReference = 8A51DE762A83C47200930C1C /* QFlickrApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8A677E752A85B4D3004A1437 /* QFlickrAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A677E7E2A85B4D3004A1437 /* Build configuration list for PBXNativeTarget "QFlickrAppTests" */;
+			buildPhases = (
+				8A677E722A85B4D3004A1437 /* Sources */,
+				8A677E732A85B4D3004A1437 /* Frameworks */,
+				8A677E742A85B4D3004A1437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A677E7B2A85B4D3004A1437 /* PBXTargetDependency */,
+			);
+			name = QFlickrAppTests;
+			productName = QFlickrAppTests;
+			productReference = 8A677E762A85B4D3004A1437 /* QFlickrAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +202,11 @@
 				TargetAttributes = {
 					8A51DE752A83C47200930C1C = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					8A677E752A85B4D3004A1437 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+						TestTargetID = 8A51DE752A83C47200930C1C;
 					};
 				};
 			};
@@ -162,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				8A51DE752A83C47200930C1C /* QFlickrApp */,
+				8A677E752A85B4D3004A1437 /* QFlickrAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,6 +236,14 @@
 			files = (
 				8A51DE812A83C47200930C1C /* Preview Assets.xcassets in Resources */,
 				8A51DE7E2A83C47200930C1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A677E742A85B4D3004A1437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A677E802A85B524004A1437 /* MockSearchResults.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +269,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A677E722A85B4D3004A1437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A677E842A85B78E004A1437 /* NetworkManagerTests.swift in Sources */,
+				8A677E822A85B686004A1437 /* MockNetworkManager.swift in Sources */,
+				8A677E862A85BA05004A1437 /* FlickrViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A677E7B2A85B4D3004A1437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A51DE752A83C47200930C1C /* QFlickrApp */;
+			targetProxy = 8A677E7A2A85B4D3004A1437 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8A51DE822A83C47200930C1C /* Debug */ = {
@@ -375,6 +464,45 @@
 			};
 			name = Release;
 		};
+		8A677E7C2A85B4D3004A1437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHKRMS9TZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.adam.QFlickrAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QFlickrApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QFlickrApp";
+			};
+			name = Debug;
+		};
+		8A677E7D2A85B4D3004A1437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XHKRMS9TZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.adam.QFlickrAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QFlickrApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QFlickrApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -392,6 +520,15 @@
 			buildConfigurations = (
 				8A51DE852A83C47200930C1C /* Debug */,
 				8A51DE862A83C47200930C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A677E7E2A85B4D3004A1437 /* Build configuration list for PBXNativeTarget "QFlickrAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A677E7C2A85B4D3004A1437 /* Debug */,
+				8A677E7D2A85B4D3004A1437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

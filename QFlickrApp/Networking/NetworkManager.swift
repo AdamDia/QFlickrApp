@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol NetworkProtocol {
-    func searchflickrPhotos(searchTerm: String, page: Int) async throws -> Photos
+    func searchFlickrPhotos(searchTerm: String, page: Int) async throws -> Photos
 }
 
 final class NetworkManager: NetworkProtocol {
@@ -18,7 +18,7 @@ final class NetworkManager: NetworkProtocol {
     private let baseUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search"
     
     
-    func searchflickrPhotos(searchTerm: String, page: Int) async throws -> Photos {
+    func searchFlickrPhotos(searchTerm: String, page: Int) async throws -> Photos {
         guard let url = URL(string: "\(baseUrl)&api_key=\(apiKey)&format=json&nojsoncallback=1&text=\(searchTerm)&page=\(page)") else {
             throw APIError.invalidURL
         }

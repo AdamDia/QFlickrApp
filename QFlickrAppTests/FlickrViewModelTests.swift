@@ -44,7 +44,7 @@ class FlickrViewModelTests: XCTestCase {
         // Given
         let expectation = XCTestExpectation(description: "Results Fetched Successfully")
         // When
-        await mockViewModel.searchPhotos(searchTerm: "dogs")
+        await mockViewModel.searchPhotos(searchTerm: "testSearch")
         
         // Then
         do {
@@ -57,6 +57,7 @@ class FlickrViewModelTests: XCTestCase {
         
         expectation.fulfill()
         await XCTWaiter().fulfillment(of: [expectation], timeout: 10)
+        mockViewModel.clearSearchHistory()
     }
     
     func test_getPhotoURL() {
@@ -75,7 +76,7 @@ class FlickrViewModelTests: XCTestCase {
         
         // Given
         let expectation = XCTestExpectation(description: "Results Fetched Successfully")
-        let searchTerm = "cats"
+        let searchTerm = "testFetch"
         
         //when
         await mockViewModel.fetchMorePhotos(searchTerm: searchTerm)
@@ -93,5 +94,21 @@ class FlickrViewModelTests: XCTestCase {
         
         expectation.fulfill()
         await XCTWaiter().fulfillment(of: [expectation], timeout: 10)
+        mockViewModel.clearSearchHistory()
+    }
+    
+    func test_saveAndLoadSearchHistory() {
+        mockViewModel.clearSearchHistory()
+        let searchTerm = "Test Search"
+        
+        // Save search history
+        mockViewModel.addToSearchHistory(searchTerm)
+        
+        // Load search history
+        mockViewModel.loadSearchHistory()
+        
+        // Assert that the loaded search history matches the saved one
+        XCTAssertEqual(mockViewModel.searchHistory, [searchTerm])
+        mockViewModel.clearSearchHistory()
     }
 }

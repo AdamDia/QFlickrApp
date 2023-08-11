@@ -27,7 +27,7 @@ struct ContentView: View {
                             Task {
                                 await viewModel.searchPhotos(searchTerm: searchTerm)
                             }
-                        })
+                        }, viewModel: viewModel)
                         if viewModel.flickrImages.isEmpty {
                             Text("No Results, please search for images.")
                                 .font(.title3)

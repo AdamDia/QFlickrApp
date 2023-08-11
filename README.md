@@ -7,6 +7,8 @@ The innovation continues with an infinite scroll feature, ensuring that your jou
 
 
 ## WireFrame
+![Drawing-2 sketchpad](https://github.com/AdamDia/QFlickrApp/assets/50494822/d7379da7-c7f1-46a1-913a-8dfaedf61eaf)
+
 ## Tech Specifications
 
 - MVVM architecture pattern.

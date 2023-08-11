@@ -7,7 +7,8 @@ The innovation continues with an infinite scroll feature, ensuring that your jou
 
 
 ## WireFrame
-![Drawing-2 sketchpad](https://github.com/AdamDia/QFlickrApp/assets/50494822/d7379da7-c7f1-46a1-913a-8dfaedf61eaf)
+![Drawing-2 sketchpad (1)](https://github.com/AdamDia/QFlickrApp/assets/50494822/09bae924-8ec8-4a96-9da3-14a749230aea)
+
 
 ## Tech Specifications
 

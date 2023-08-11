@@ -20,7 +20,6 @@
 		8A51DE952A84FF1800930C1C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51DE942A84FF1800930C1C /* APIError.swift */; };
 		8A51DE982A85059D00930C1C /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51DE972A85059D00930C1C /* CustomAlert.swift */; };
 		8A677E552A858135004A1437 /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E542A858135004A1437 /* Data+Ext.swift */; };
-		8A677E572A8595A0004A1437 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E562A8595A0004A1437 /* LoadingView.swift */; };
 		8A677E802A85B524004A1437 /* MockSearchResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A677E7F2A85B524004A1437 /* MockSearchResults.json */; };
 		8A677E822A85B686004A1437 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E812A85B686004A1437 /* MockNetworkManager.swift */; };
 		8A677E842A85B78E004A1437 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A677E832A85B78E004A1437 /* NetworkManagerTests.swift */; };
@@ -52,7 +51,6 @@
 		8A51DE942A84FF1800930C1C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		8A51DE972A85059D00930C1C /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		8A677E542A858135004A1437 /* Data+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
-		8A677E562A8595A0004A1437 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8A677E762A85B4D3004A1437 /* QFlickrAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QFlickrAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A677E7F2A85B524004A1437 /* MockSearchResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockSearchResults.json; sourceTree = "<group>"; };
 		8A677E812A85B686004A1437 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 			children = (
 				8A51DE972A85059D00930C1C /* CustomAlert.swift */,
 				8A677E542A858135004A1437 /* Data+Ext.swift */,
-				8A677E562A8595A0004A1437 /* LoadingView.swift */,
 			);
 			path = "Helper & Ext";
 			sourceTree = "<group>";
@@ -259,7 +256,6 @@
 				8A51DE8F2A84F9C000930C1C /* MockData.swift in Sources */,
 				8A51DE8C2A83C6A500930C1C /* FlickrSearchBar.swift in Sources */,
 				8A51DE882A83C4F700930C1C /* ImageDataModel.swift in Sources */,
-				8A677E572A8595A0004A1437 /* LoadingView.swift in Sources */,
 				8A51DE932A84FBD600930C1C /* NetworkManager.swift in Sources */,
 				8A51DE7A2A83C47200930C1C /* QFlickrAppApp.swift in Sources */,
 				8A51DE8A2A83C55200930C1C /* FlickrViewModel.swift in Sources */,

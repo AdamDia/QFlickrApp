@@ -29,8 +29,8 @@ struct ContentView: View {
                             }
                         })
                         if viewModel.flickrImages.isEmpty {
-                            Text("No Results, please search for images...")
-                                .font(.title2)
+                            Text("No Results, please search for images.")
+                                .font(.title3)
                                 .bold()
                                 .frame(maxHeight: .infinity)
                         } else {
@@ -52,7 +52,7 @@ struct ContentView: View {
                                                 } placeholder: {
                                                     Image(systemName: "photo.fill")
                                                         .resizable()
-                                                        .frame(width: 150, height: 100)
+                                                        .frame(width: itemWidth, height: itemHeight)
                                                 }
                                                 .task {
                                                     if viewModel.hasReachedEnd(of: photo) && !viewModel.isFetching {

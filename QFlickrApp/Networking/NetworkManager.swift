@@ -29,7 +29,6 @@ final class NetworkManager: NetworkProtocol {
         }
 
         do {
-            data.jsonToString()
             let decoder = JSONDecoder()
             return try decoder.decode(ImageDataModel.self, from: data).photos
 

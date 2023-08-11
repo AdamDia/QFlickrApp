@@ -15,6 +15,7 @@ The innovation continues with an infinite scroll feature, ensuring that your jou
 - MVVM architecture pattern.
 - SwiftUI.
 - AsyncImage.
+- UserDefaults.
 - URLSession to connect to the API and retrieve the data.
 - Unit Test for Network layer and view model.
 - Custom API Errors and custom alerts.
